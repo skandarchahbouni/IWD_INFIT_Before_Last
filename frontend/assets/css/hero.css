@@ -212,6 +212,16 @@ img {
   border-radius: 2rem;
   position: relative;
 }
+
+@media (max-width: 767px){
+  .header .hero .row {
+    height: 80%;
+    background: url("../images/bg.svg") center/cover no-repeat fixed;
+    border-radius: 2rem;
+    position: relative;
+  }
+}
+
 .header .hero .row .col {
   margin-left: 5rem;
 }
