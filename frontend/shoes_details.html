@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anon - eCommerce Website</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Cartzilla | Sports Hooded Sweatshirt</title>
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+  <meta name="keywords"
+    content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+  <meta name="author" content="Createx Studio">
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="mask-icon" color="#fe6a6a" href="assets/safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/simplebar/dist/simplebar.min.css" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/drift-zoom/dist/drift-basic.min.css" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css" />
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+  <div class="overlay" data-overlay></div>
+
+  <!-- header -->
+  <header>
+    <div class="header-main">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/Logo.svg" alt="" />
+        </div>
+        <div class="header-search-container">
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="header-user-actions">
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-bottom-navigation">
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+    </div>
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <ul class="mobile-menu-category-list">
+        <li class="menu-category">
+          <a href="index.html" class="menu-title">Home</a>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shirt</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Safety Shoes</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wallet</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Jewelry</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perfume</p>
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+          <ul class="submenu-category-list" data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothes Perfume</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodorant</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Flower Fragrance</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Air Freshener</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+      </ul>
+      <div class="menu-bottom">
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="menu-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-wrapper">
+    <!-- Page Title-->
+    <div class="page-title-overlap bg-dark pt-4">
+      <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+        <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+
+        </div>
+        <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+          <h1 class="h3 text-light mb-0">Sports Hooded Sweatshirt</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Gallery + details-->
+      <div class="bg-light shadow-lg rounded-3 px-4 py-3 mb-5">
+        <div class="px-lg-3">
+          <div class="row">
+            <!-- Product gallery-->
+            <div class="col-lg-7 pe-lg-0 pt-lg-4">
+              <div class="product-gallery">
+                <div class="product-gallery-preview order-sm-2">
+                  <div class="product-gallery-preview-item active" id="first"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product image">
+                    <div></div>
+                  </div>
+                  <div class="product-gallery-preview-item" id="second"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product image">
+                    <div></div>
+                  </div>
+                  <div class="product-gallery-preview-item" id="third"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product image">
+                    <div></div>
+                  </div>
+                  <div class="product-gallery-preview-item" id="fourth"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product image">
+                    <div></div>
+                  </div>
+                </div>
+                <div class="product-gallery-thumblist order-sm-1"><a class="product-gallery-thumblist-item active"
+                    href="#first"><img src="assets\images\products\sports-6.jpg" alt="Product thumb"></a><a
+                    class="product-gallery-thumblist-item" href="#second"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product thumb"></a><a
+                    class="product-gallery-thumblist-item" href="#third"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product thumb"></a><a
+                    class="product-gallery-thumblist-item" href="#fourth"><img
+                      src="assets\images\products\sports-6.jpg" alt="Product thumb"></a>
+                    
+                  </a></div>
+              </div>
+            </div>
+            <!-- Product details-->
+            <div class="col-lg-5 pt-4 pt-lg-0">
+              <div class="product-details ms-auto pb-3">
+                <div class="d-flex justify-content-between align-items-center mb-2"><a href="#reviews" data-scroll>
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i
+                        class="star-rating-icon ci-star-filled active"></i><i
+                        class="star-rating-icon ci-star-filled active"></i><i
+                        class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                    </div><span class="d-inline-block fs-sm text-body align-middle mt-1 ms-1">74 Reviews</span>
+                  </a>
+                  <button class="btn-wishlist me-0 me-lg-n3" type="button" data-bs-toggle="tooltip"
+                    title="Add to wishlist"><i class="ci-heart"></i></button>
+                </div>
+                <div class="mb-3"><span class="h3 fw-normal text-accent me-1">$18.<small>99</small></span>
+                  <del class="text-muted fs-lg me-3">$25.<small>00</small></del><span
+                    class="badge bg-danger badge-shadow align-middle mt-n2">Sale</span>
+                </div>
+                <div class="fs-sm mb-4"><span class="text-heading fw-medium me-1">Color:</span><span class="text-muted"
+                    id="colorOption">Red/Dark blue/White</span></div>
+                <div class="position-relative me-n4 mb-3">
+                  <div class="form-check form-option form-check-inline mb-2">
+                    <input class="form-check-input" type="radio" name="color" id="color1" data-bs-label="colorOption"
+                      value="Red/Dark blue/White" checked>
+                    <label class="form-option-label rounded-circle" for="color1"><span
+                        class="form-option-color rounded-circle"
+                        style="background-image: url(assets/images/shop/single/color-opt-1.png)"></span></label>
+                  </div>
+                  <div class="form-check form-option form-check-inline mb-2">
+                    <input class="form-check-input" type="radio" name="color" id="color2" data-bs-label="colorOption"
+                      value="Beige/White/Dark grey">
+                    <label class="form-option-label rounded-circle" for="color2"><span
+                        class="form-option-color rounded-circle"
+                        style="background-image: url(assets/images/shop/single/color-opt-2.png)"></span></label>
+                  </div>
+                  <div class="form-check form-option form-check-inline mb-2">
+                    <input class="form-check-input" type="radio" name="color" id="color3" data-bs-label="colorOption"
+                      value="Dark grey/White/Orange">
+                    <label class="form-option-label rounded-circle" for="color3"><span
+                        class="form-option-color rounded-circle"
+                        style="background-image: url(assets/images/shop/single/color-opt-3.png)"></span></label>
+                  </div>
+                  <div class="product-badge product-available mt-n1"><i class="ci-security-check"></i>Product available
+                  </div>
+                </div>
+                <form class="mb-grid-gutter" method="post">
+                  <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center pb-1">
+                      <label class="form-label" for="product-size">Size:</label><a class="nav-link-style fs-sm"
+                        href="#size-chart" data-bs-toggle="modal"><i
+                          class="ci-ruler lead align-middle me-1 mt-n1"></i>Size guide</a>
+                    </div>
+                    <select class="form-select" id="product-size">
+                      <option value="">Select size</option>
+                      <option value="xs">XS</option>
+                      <option value="s">S</option>
+                      <option value="m">M</option>
+                      <option value="l">L</option>
+                      <option value="xl">XL</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <select class="form-select me-3" style="width: 5rem;">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <button class="btn btn-primary btn-shadow d-block w-100 me-1" type="submit">
+                      <i class="ci-cart fs-lg me-2"></i>Add to Cart
+                    </button>
+                    <a
+                      href="https://web-demo.vyking.io/vyking-web-demo/camera?fbclid=IwAR2mIWHwKPrVCLgaIHQ3ABqHrS8A36AIJvqlwhwKIczLF5H_0Oaos41AtOg"
+                      target="_blank"
+                      class="animate__animated animate__pulse animate__slow animate__infinite btn btn-primary btn-shadow d-block w-100 ms-1">
+                      <i class="ci-eye fs-lg me-2"></i> Try on
+                    </a>
+                  </div>
+                </form>
+                <!-- Product panels-->
+                <div class="accordion mb-4" id="productPanels">
+                  <div class="accordion-item">
+                    <h3 class="accordion-header"><a class="accordion-button" href="#productInfo" role="button"
+                        data-bs-toggle="collapse" aria-expanded="true" aria-controls="productInfo"><i
+                          class="ci-announcement text-muted fs-lg align-middle mt-n1 me-2"></i>Product info</a></h3>
+                    <div class="accordion-collapse collapse show" id="productInfo" data-bs-parent="#productPanels">
+                      <div class="accordion-body">
+                        <h6 class="fs-sm mb-2">Composition</h6>
+                        <ul class="fs-sm ps-4">
+                          <li>Elastic rib: Cotton 95%, Elastane 5%</li>
+                          <li>Lining: Cotton 100%</li>
+                          <li>Cotton 80%, Polyester 20%</li>
+                        </ul>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header"><a class="accordion-button collapsed" href="#shippingOptions"
+                        role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="shippingOptions"><i
+                          class="ci-delivery text-muted lead align-middle mt-n1 me-2"></i>Shipping options</a></h3>
+                    <div class="accordion-collapse collapse" id="shippingOptions" data-bs-parent="#productPanels">
+                      <div class="accordion-body fs-sm">
+                        <div class="d-flex justify-content-between border-bottom pb-2">
+                          <div>
+                            <div class="fw-semibold text-dark">Courier</div>
+                            <div class="fs-sm text-muted">2 - 4 days</div>
+                          </div>
+                          <div>$26.50</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                          <div>
+                            <div class="fw-semibold text-dark">Local shipping</div>
+                            <div class="fs-sm text-muted">up to one week</div>
+                          </div>
+                          <div>$10.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                          <div>
+                            <div class="fw-semibold text-dark">Flat rate</div>
+                            <div class="fs-sm text-muted">5 - 7 days</div>
+                          </div>
+                          <div>$33.85</div>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom py-2">
+                          <div>
+                            <div class="fw-semibold text-dark">UPS ground shipping</div>
+                            <div class="fs-sm text-muted">4 - 6 days</div>
+                          </div>
+                          <div>$18.00</div>
+                        </div>
+                        <div class="d-flex justify-content-between pt-2">
+                          <div>
+                            <div class="fw-semibold text-dark">Local pickup from store</div>
+                            <div class="fs-sm text-muted">&mdash;</div>
+                          </div>
+                          <div>$0.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h3 class="accordion-header"><a class="accordion-button collapsed" href="#localStore" role="button"
+                        data-bs-toggle="collapse" aria-expanded="true" aria-controls="localStore"><i
+                          class="ci-location text-muted fs-lg align-middle mt-n1 me-2"></i>Find in local store</a></h3>
+                    <div class="accordion-collapse collapse" id="localStore" data-bs-parent="#productPanels">
+                      <div class="accordion-body">
+                        <select class="form-select">
+                          <option value>Select your country</option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Belgium">Belgium</option>
+                          <option value="France">France</option>
+                          <option value="Germany">Germany</option>
+                          <option value="Spain">Spain</option>
+                          <option value="UK">United Kingdom</option>
+                          <option value="USA">USA</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sharing-->
+                <label class="form-label d-inline-block align-middle my-2 me-3">Share:</label><a
+                  class="btn-share btn-twitter me-2 my-2" href="#"><i class="ci-twitter"></i>Twitter</a><a
+                  class="btn-share btn-instagram me-2 my-2" href="#"><i class="ci-instagram"></i>Instagram</a><a
+                  class="btn-share btn-facebook my-2" href="#"><i class="ci-facebook"></i>Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+ 
+    <div class="footer-nav">
+      <div class="container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fashion</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Furniture</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosmetic</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Health</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Accessories</a>
+          </li>
+        </ul>
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          
+        
+        </ul>
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New Stores</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <address class="content">
+              07 Bouraoui Amar résidence
+              Oued-smar
+            </address>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+607936-8058" class="footer-nav-link">(213) 0549441512</a>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:ilyes@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+        </ul>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/simplebar/dist/simplebar.min.js"></script>
+  <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/drift-zoom/dist/Drift.min.js"></script>
+  <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+  <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+  <!-- Main theme script-->
+  <script src="assets/js/theme.min.js"></script>
+</body>
+</html>
