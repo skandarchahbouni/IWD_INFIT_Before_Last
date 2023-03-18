@@ -215,7 +215,7 @@ img {
 
 @media (max-width: 767px){
   .header .hero .row {
-    height: 80%;
+    height: 60%;
     background: url("../images/bg.svg") center/cover no-repeat fixed;
     border-radius: 2rem;
     position: relative;
@@ -298,7 +298,7 @@ img {
 }
 @media (max-width: 567px) {
   .header .hero {
-    height: 100vh;
+    height: 80vh;
     margin: 0 1rem;
   }
   .header .hero .row .col .subtitle {
